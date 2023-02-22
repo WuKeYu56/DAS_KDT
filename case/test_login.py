@@ -3,7 +3,7 @@ import pytest
 from common.base import Base
 from common.getdata import data
 
-tcs = data()
+tcs = data("D:\code\DAS_KDT\\testdata\case1.xls")
 
 class TestDASProject:
     @pytest.fixture(scope='function')

@@ -63,8 +63,13 @@ class Base:
             return False
 
     def clear(self,locator):#清除方法
-        ele=self.findElement(locator)
-        ele.clear()
+        try:
+            ele = self.findElement(locator)
+            ele.clear()
+            return True
+        except:
+            return False
+
 
     def isSelected(self,locator):
         '''判断元素是否被选中，返回bool布尔值'''
