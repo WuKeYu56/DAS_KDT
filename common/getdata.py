@@ -7,4 +7,7 @@ def data(datafile):
     return tcs
 
 if __name__ == '__main__':
-    print(data('D:\code\DAS_KDT\\testdata\case1.xls'))
+    # print(data('D:\code\DAS_KDT\\testdata\case1.xls'))
+    a = data('D:\code\DAS_KDT\\testdata\case1.xls')
+    b = a[0]
+    print(b.title)
