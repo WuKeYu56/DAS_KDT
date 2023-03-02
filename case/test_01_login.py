@@ -44,4 +44,4 @@ class TestDASLogin:
 
 
 if __name__ == '__main__':
-    pytest.main(['-v', 's', '-m', 'compare', 'test_login.py'])
+    pytest.main(['-v', 's', '-m', 'compare', 'test_01_login.py'])

@@ -7,7 +7,7 @@ from common.getdata import get_data
 from pages.loginpage import login
 
 #测试用例的文件路径及所测试模块名
-tcs = get_data("D:\code\DAS_KDT\\testdata\case2.xls", 'imgAnalysis')
+tcs = get_data("D:\code\DAS_KDT\\testdata\case2.xls", 'projects')
 
 class TestDASProject:
     @pytest.fixture(scope='function')
@@ -18,7 +18,7 @@ class TestDASProject:
 
     @pytest.mark.compare
     @pytest.mark.parametrize('tc', tcs)
-    def test_do_imgAnalysis(self, open_das, tc):
+    def test_do_project(self, open_das, tc):
         '''进入DAS项目管理界面'''
         results = []
         for step in tc.steps:
@@ -50,4 +50,4 @@ class TestDASProject:
         assert result is True
 
 if __name__ == '__main__':
-    pytest.main(['-v', 's', '-m', 'compare', 'test_login.py'])
+    pytest.main(['-v', 's', '-m', 'compare', 'test_01_login.py'])

@@ -264,6 +264,7 @@ class Base:
                     x2 = x1+random.randint(0, 200)  #可改变数字调节点击位置
                     y2 = y1+random.randint(0, 200)
                     ui.click(x2, y2, button='left')
+                    time.sleep(1)
                 ui.click(x2, y2, button='left')
                 print('已点击末点')
 
