@@ -1,9 +1,9 @@
 import pytest
 
 from common.base import Base
-from common.getdata import data
+from common.getdata import get_data
 
-tcs = data("D:\code\DAS_KDT\\testdata\case1.xls")
+tcs = get_data("D:\code\DAS_KDT\\testdata\case2.xls", 'login')
 
 class TestDASLogin:
     @pytest.fixture(scope='function')

@@ -1,8 +1,13 @@
+import random
+import time
+
+import pyautogui as ui
 from selenium import webdriver
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.select import Select
 from selenium.webdriver.support.wait import WebDriverWait
+
 
 # driver = webdriver.Chrome()
 # driver.maximize_window()
@@ -45,6 +50,13 @@ class Base:
             except:
                 return []
 
+    def isElementExist(self, locator):
+        try:
+            self.findElement(locator)
+            return True
+        except:
+            return False
+
     def sendkeys(self, locator, text=''):
         try:
             ele = self.findElement(locator)
@@ -76,13 +88,6 @@ class Base:
         ele=self.findElement(locator)
         r=ele.is_selected()#判断元素是否被选中并返回
         return r
-
-    def isElementExist(self,locator):
-        try:
-            self.findElement(locator)
-            return True
-        except:
-            return False
 
     def is_title(self,_title=''):
         '''返回bool值'''
@@ -223,14 +228,62 @@ class Base:
             print('alert不存在')
         else:
             return r
+
     def move_to_element(self, locator):
         '''鼠标悬停操作'''
-        ele = self.findElement(locator)
-        ActionChains(self.driver).move_to_element(ele).perform()
+        try:
+            ele = self.findElement(locator)
+            ActionChains(self.driver).move_to_element(ele).perform()
+            return True
+        except:
+            return False
+
+    def mapping_disease(self, num_type):
+        """通过鼠标操作绘制病害"""
+        if not isinstance(num_type, tuple):
+            print('num_type参数类型错误，必须传元组类型：num_type=(num, type) 其中num为点击次数，type为绘制类型')
+        else:
+            ui.FAILSAFE = True
+            #基于屏幕分辨率获取中心点
+            m, n = ui.size()
+            x1, y1 = m/2, n/2
+            ui.click(x1, y1, button='left')
+            ui.scroll(400)
+
+            if num_type[1] == '':
+                type = 'ployline'
+            else:
+                type = num_type[1]
+            num = int(num_type[0])
+
+            #绘制不同类型病害
+            if type == 'polyline':
+                self.click(('xpath', '//*[@id="mapid"]/div[2]/div[1]/div/div[1]/div/a[1]'))
+                ui.click(x1, y1, button='left')  #点击中心点开始绘制
+                for i in range(num):
+                    x2 = x1+random.randint(0, 200)  #可改变数字调节点击位置
+                    y2 = y1+random.randint(0, 200)
+                    ui.click(x2, y2, button='left')
+                ui.click(x2, y2, button='left')
+                print('已点击末点')
+
+            elif type == "polygon":
+                self.click(('xpath', '//*[@id="mapid"]/div[2]/div[1]/div/div[1]/div/a[2]'))
+                ui.click(x1, y1, button='left')  #点击中心点开始绘制
+                for i in range(num):
+                    x2 = x1+random.randint(0, 200)  #可改变数字调节点击位置
+                    y2 = y1+random.randint(0, 200)
+                    ui.click(x2, y2, button='left')
+                    time.sleep(1)
+                ui.click(x1, y1, button='left')
+                print('已点击中心点')
+            else:
+                print('请输入正确的参数：type=polyline/polygon')
+            return True
 
 if __name__ == '__main__':
     driver = webdriver.Chrome
     web = Base(driver)
     driver.get('https://home.cnblogs.com/u/yoyoketang/')
-    loc_1 = ('id','header_user_left')
+    loc_1 = ('id', 'header_user_left')
     t = web.get_text(loc_1)

@@ -5,7 +5,7 @@ from selenium import webdriver
 def driver(request):
     driver = webdriver.Chrome()
     driver.maximize_window()
-    driver.implicitly_wait(5)
+    # driver.implicitly_wait(5)
     # login(driver)
     def end():
         driver.quit()
