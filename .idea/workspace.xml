@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26899d7d-c31a-4d21-9de3-cc0fcec83d0e" name="变更" comment="完成添加病害，优化运行逻辑">
-      <change beforePath="$PROJECT_DIR$/case/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/case/wukeyu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case/test_imgAnalysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/case/test_03_imgAnalysis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/case/test_01_login.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case/test_projects.py" beforeDir="false" afterPath="$PROJECT_DIR$/case/test_02_projects.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/excuter.py" beforeDir="false" afterPath="$PROJECT_DIR$/excuter.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testdata/case2.xls" beforeDir="false" afterPath="$PROJECT_DIR$/testdata/case2.xls" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -177,7 +174,8 @@
       <workItem from="1677221304351" duration="19000" />
       <workItem from="1677221339897" duration="8425000" />
       <workItem from="1677307118425" duration="9566000" />
-      <workItem from="1677489753821" duration="14572000" />
+      <workItem from="1677489753821" duration="17004000" />
+      <workItem from="1678180078620" duration="1032000" />
     </task>
     <task id="LOCAL-00001" summary="本地支持运行，无allure生成报告">
       <created>1676960992999</created>
@@ -235,7 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677724685902</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="完成添加病害，优化运行逻辑">
+      <created>1677739669442</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1677739669442</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,7 +291,7 @@
     <SUITE FILE_PATH="coverage/DAS_KDT$loginpage.coverage" NAME="loginpage 覆盖结果" MODIFIED="1676876702118" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pages" />
     <SUITE FILE_PATH="coverage/DAS_KDT$hahah.coverage" NAME="hahah 覆盖结果" MODIFIED="1677049330718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
     <SUITE FILE_PATH="coverage/DAS_KDT$test.coverage" NAME="test 覆盖结果" MODIFIED="1677578889283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
-    <SUITE FILE_PATH="coverage/DAS_KDT$excuter.coverage" NAME="excuter 覆盖结果" MODIFIED="1677739427470" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DAS_KDT$excuter.coverage" NAME="excuter 覆盖结果" MODIFIED="1678180452015" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DAS_KDT$sendemail.coverage" NAME="sendemail 覆盖结果" MODIFIED="1676971031204" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DAS_KDT$base.coverage" NAME="base 覆盖结果" MODIFIED="1676622271545" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common" />
   </component>
