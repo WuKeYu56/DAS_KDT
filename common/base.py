@@ -238,7 +238,52 @@ class Base:
         except:
             return False
 
-    def mapping_disease(self, num_type):
+    def mapping_inn_disease(self, num_type):
+        """通过鼠标操作绘制病害"""
+        if not isinstance(num_type, tuple):
+            print('num_type参数类型错误，必须传元组类型：num_type=(num, type) 其中num为点击次数，type为绘制类型')
+        else:
+            ui.FAILSAFE = True
+            #基于屏幕分辨率获取中心点
+            m, n = ui.size()
+            x1, y1 = (m*840)/2880, n/2
+            ui.click(x1, y1, button='left')
+            ui.scroll(400)
+            time.sleep(2)
+
+            if num_type[1] == '':
+                type = 'polyline'
+            else:
+                type = num_type[1]
+            num = int(num_type[0])
+
+            #绘制不同类型病害
+            if type == 'polyline':
+                self.click(('xpath', '//*[@id="maptop"]/div[2]/div[1]/div[1]/div[1]/div/a[1]'))
+                ui.click(x1, y1, button='left')  #点击中心点开始绘制
+                for i in range(num):
+                    x2 = x1+random.randint(0, 200)  #可改变数字调节点击位置
+                    y2 = y1+random.randint(0, 200)
+                    ui.click(x2, y2, button='left')
+                    time.sleep(1)
+                ui.click(x2, y2, button='left')
+                print('已点击末点')
+
+            elif type == "polygon":
+                self.click(('xpath', '//*[@id="maptop"]/div[2]/div[1]/div[1]/div[1]/div/a[2]'))
+                ui.click(x1, y1, button='left')  #点击中心点开始绘制
+                for i in range(num):
+                    x2 = x1+random.randint(0, 200)  #可改变数字调节点击位置
+                    y2 = y1+random.randint(0, 200)
+                    ui.click(x2, y2, button='left')
+                    time.sleep(1)
+                ui.click(x1, y1, button='left')
+                print('已点击中心点')
+            else:
+                print('请输入正确的参数：type=polyline/polygon')
+            return True
+
+    def mapping_sur_disease(self, num_type):
         """通过鼠标操作绘制病害"""
         if not isinstance(num_type, tuple):
             print('num_type参数类型错误，必须传元组类型：num_type=(num, type) 其中num为点击次数，type为绘制类型')
@@ -251,7 +296,7 @@ class Base:
             ui.scroll(400)
 
             if num_type[1] == '':
-                type = 'ployline'
+                type = 'polyline'
             else:
                 type = num_type[1]
             num = int(num_type[0])
@@ -278,9 +323,20 @@ class Base:
                     time.sleep(1)
                 ui.click(x1, y1, button='left')
                 print('已点击中心点')
+
+            elif type == "stake":
+                ui.click(x1, y1, button='left')  #点击中心点开始绘制
+                for i in range(num):
+                    x2 = x1+random.randint(0, 200)  #可改变数字调节点击位置
+                    y2 = y1+random.randint(0, 200)
+                self.click(('xpath', '//*[@id="mapid"]/div[2]/div[1]/div/div[1]/div/a[4]'))
+                ui.click(x2, y2, button='left')
+                print("确定桩号位置")
             else:
                 print('请输入正确的参数：type=polyline/polygon')
             return True
+
+
 
 if __name__ == '__main__':
     driver = webdriver.Chrome

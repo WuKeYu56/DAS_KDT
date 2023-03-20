@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="26899d7d-c31a-4d21-9de3-cc0fcec83d0e" name="变更" comment="完成添加病害，优化运行逻辑">
+    <list default="true" id="26899d7d-c31a-4d21-9de3-cc0fcec83d0e" name="变更" comment="补充用例">
+      <change afterPath="$PROJECT_DIR$/case/test_04_GPRAnalysis.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/parseFunction.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/excuter.py" beforeDir="false" afterPath="$PROJECT_DIR$/excuter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case/test_01_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/case/test_01_login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case/test_02_projects.py" beforeDir="false" afterPath="$PROJECT_DIR$/case/test_02_projects.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case/test_03_imgAnalysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/case/test_03_imgAnalysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case/wukeyu.py" beforeDir="false" afterPath="$PROJECT_DIR$/case/wukeyu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/base.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testdata/case2.xls" beforeDir="false" afterPath="$PROJECT_DIR$/testdata/case2.xls" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,22 +89,29 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="case.test_01_login.TestDASLogin.test_do_login 的 Python 测试" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="wukeyu" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DAS_KDT" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/case" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;case.test_01_login.TestDASLogin.test_do_login&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/case/wukeyu.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="case.test_02_projects.TestDASProject 的 Python 测试" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python 测试 (test_03_imgAnalysis.py 内)" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="DAS_KDT" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -109,11 +122,11 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;case.test_02_projects.TestDASProject&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/case/test_03_imgAnalysis.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="case.test_03_imgAnalysis.TestDASProject 的 Python 测试" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python 测试 (test_04_GPRAnalysis.py 内)" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="DAS_KDT" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -124,11 +137,11 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;case.test_03_imgAnalysis.TestDASProject&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/case/test_04_GPRAnalysis.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="case.test_03_imgAnalysis.TestDASProject.test_do_imgAnalysis 的 Python 测试" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="test_02_projects.TestDASProject.test_do_project 的 Python 测试" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="DAS_KDT" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -139,24 +152,24 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;case.test_03_imgAnalysis.TestDASProject.test_do_imgAnalysis&quot;" />
+      <option name="_new_target" value="&quot;test_02_projects.TestDASProject.test_do_project&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.wukeyu" />
       <item itemvalue="Python.excuter" />
-      <item itemvalue="Python 测试.case.test_01_login.TestDASLogin.test_do_login 的 Python 测试" />
-      <item itemvalue="Python 测试.case.test_02_projects.TestDASProject 的 Python 测试" />
-      <item itemvalue="Python 测试.case.test_03_imgAnalysis.TestDASProject 的 Python 测试" />
-      <item itemvalue="Python 测试.case.test_03_imgAnalysis.TestDASProject.test_do_imgAnalysis 的 Python 测试" />
+      <item itemvalue="Python 测试.Python 测试 (test_03_imgAnalysis.py 内)" />
+      <item itemvalue="Python 测试.test_02_projects.TestDASProject.test_do_project 的 Python 测试" />
+      <item itemvalue="Python 测试.Python 测试 (test_04_GPRAnalysis.py 内)" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.excuter" />
-        <item itemvalue="Python 测试.case.test_03_imgAnalysis.TestDASProject.test_do_imgAnalysis 的 Python 测试" />
-        <item itemvalue="Python 测试.case.test_01_login.TestDASLogin.test_do_login 的 Python 测试" />
-        <item itemvalue="Python 测试.case.test_02_projects.TestDASProject 的 Python 测试" />
-        <item itemvalue="Python 测试.case.test_03_imgAnalysis.TestDASProject 的 Python 测试" />
+        <item itemvalue="Python 测试.test_02_projects.TestDASProject.test_do_project 的 Python 测试" />
+        <item itemvalue="Python 测试.Python 测试 (test_03_imgAnalysis.py 内)" />
+        <item itemvalue="Python 测试.Python 测试 (test_04_GPRAnalysis.py 内)" />
+        <item itemvalue="Python.wukeyu" />
       </list>
     </recent_temporary>
   </component>
@@ -175,7 +188,9 @@
       <workItem from="1677221339897" duration="8425000" />
       <workItem from="1677307118425" duration="9566000" />
       <workItem from="1677489753821" duration="17004000" />
-      <workItem from="1678180078620" duration="1032000" />
+      <workItem from="1678180078620" duration="16900000" />
+      <workItem from="1678439749851" duration="13008000" />
+      <workItem from="1679292549454" duration="494000" />
     </task>
     <task id="LOCAL-00001" summary="本地支持运行，无allure生成报告">
       <created>1676960992999</created>
@@ -240,7 +255,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677739669442</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="补充用例">
+      <created>1678181237362</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1678181237362</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,35 +286,32 @@
     <MESSAGE value="代码优化" />
     <MESSAGE value="测试项目管理用例的项目工程" />
     <MESSAGE value="完成添加病害，优化运行逻辑" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成添加病害，优化运行逻辑" />
+    <MESSAGE value="补充用例" />
+    <option name="LAST_COMMIT_MESSAGE" value="补充用例" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/case/wukeyu.py</url>
-          <line>83</line>
+          <url>file://$PROJECT_DIR$/common/parseFunction.py</url>
+          <line>4</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/case/wukeyu.py</url>
-          <line>42</line>
-          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DAS_KDT$get_data.coverage" NAME="get_data 覆盖结果" MODIFIED="1676626075937" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common" />
-    <SUITE FILE_PATH="coverage/DAS_KDT$.coverage" NAME=" 覆盖结果" MODIFIED="1677725093789" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
+    <SUITE FILE_PATH="coverage/DAS_KDT$.coverage" NAME=" 覆盖结果" MODIFIED="1678694625405" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
     <SUITE FILE_PATH="coverage/DAS_KDT$parseXLS.coverage" NAME="parseXLS 覆盖结果" MODIFIED="1677047414926" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common" />
     <SUITE FILE_PATH="coverage/DAS_KDT$getdata.coverage" NAME="getdata 覆盖结果" MODIFIED="1677226258872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common" />
     <SUITE FILE_PATH="coverage/DAS_KDT$loginpage.coverage" NAME="loginpage 覆盖结果" MODIFIED="1676876702118" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pages" />
     <SUITE FILE_PATH="coverage/DAS_KDT$hahah.coverage" NAME="hahah 覆盖结果" MODIFIED="1677049330718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
     <SUITE FILE_PATH="coverage/DAS_KDT$test.coverage" NAME="test 覆盖结果" MODIFIED="1677578889283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
-    <SUITE FILE_PATH="coverage/DAS_KDT$excuter.coverage" NAME="excuter 覆盖结果" MODIFIED="1678180452015" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DAS_KDT$excuter.coverage" NAME="excuter 覆盖结果" MODIFIED="1679292785279" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DAS_KDT$sendemail.coverage" NAME="sendemail 覆盖结果" MODIFIED="1676971031204" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DAS_KDT$base.coverage" NAME="base 覆盖结果" MODIFIED="1676622271545" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common" />
+    <SUITE FILE_PATH="coverage/DAS_KDT$wukeyu.coverage" NAME="wukeyu 覆盖结果" MODIFIED="1678672128416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
   </component>
 </project>

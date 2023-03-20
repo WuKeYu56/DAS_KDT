@@ -6,7 +6,7 @@ from common.parseFunction import do_step
 from pages.loginpage import login
 
 #测试用例的文件路径及所测试模块名
-tcs = get_data("D:\code\DAS_KDT\\testdata\case2.xls", 'imgAnalysis')
+tcs = get_data("D:\code\DAS_KDT\\testdata\case2.xls", 'GPRAnalysis')
 
 class TestDASProject:
     @pytest.fixture(scope='function')
@@ -24,4 +24,4 @@ class TestDASProject:
         assert result is True
 
 if __name__ == '__main__':
-    pytest.main(['-v', 's', '-m', 'compare', 'test_01_login.py'])
+    pytest.main(['-v', 's', '-m', 'compare', 'test_04_GPRAnalysis.py'])
