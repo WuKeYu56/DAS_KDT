@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="26899d7d-c31a-4d21-9de3-cc0fcec83d0e" name="变更" comment="补充用例雷达处理、图像分析部分用例">
-      <change afterPath="$PROJECT_DIR$/case/test_05_2DView.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case/test_06_3DView.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case/wukeyu.py" beforeDir="false" afterPath="$PROJECT_DIR$/case/wukeyu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testdata/case2.xls" beforeDir="false" afterPath="$PROJECT_DIR$/testdata/case2.xls" afterDir="false" />
-    </list>
+    <list default="true" id="26899d7d-c31a-4d21-9de3-cc0fcec83d0e" name="变更" comment="补充用例二维视图、三维视图" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -181,7 +174,7 @@
       <workItem from="1678180078620" duration="16900000" />
       <workItem from="1678439749851" duration="13008000" />
       <workItem from="1679292549454" duration="11964000" />
-      <workItem from="1679897924111" duration="356000" />
+      <workItem from="1679897924111" duration="693000" />
     </task>
     <task id="LOCAL-00001" summary="本地支持运行，无allure生成报告">
       <created>1676960992999</created>
@@ -260,7 +253,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679293109715</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="补充用例二维视图、三维视图">
+      <created>1679898316310</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1679898316310</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,7 +286,8 @@
     <MESSAGE value="完成添加病害，优化运行逻辑" />
     <MESSAGE value="补充用例" />
     <MESSAGE value="补充用例雷达处理、图像分析部分用例" />
-    <option name="LAST_COMMIT_MESSAGE" value="补充用例雷达处理、图像分析部分用例" />
+    <MESSAGE value="补充用例二维视图、三维视图" />
+    <option name="LAST_COMMIT_MESSAGE" value="补充用例二维视图、三维视图" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
