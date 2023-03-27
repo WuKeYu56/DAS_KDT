@@ -68,6 +68,11 @@ class Base:
 
     def click(self, locator):#点击方法
         try:
+            if locator[0] == "link_text":
+                locator = list(locator)
+                locator[0] = "link text"
+                locator = tuple(locator)
+            print(locator)
             ele = self.findElement(locator)
             ele.click()
             return True
