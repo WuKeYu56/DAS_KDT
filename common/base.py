@@ -79,7 +79,7 @@ class Base:
         except:
             return False
 
-    def clear(self,locator):#清除方法
+    def clear(self, locator):#清除方法
         try:
             ele = self.findElement(locator)
             ele.clear()
@@ -88,7 +88,7 @@ class Base:
             return False
 
 
-    def isSelected(self,locator):
+    def isSelected(self, locator):
         '''判断元素是否被选中，返回bool布尔值'''
         ele=self.findElement(locator)
         r=ele.is_selected()#判断元素是否被选中并返回

@@ -24,4 +24,4 @@ class TestDASProject:
         assert result is True
 
 if __name__ == '__main__':
-    pytest.main(['-v', 's', '-m', 'compare', 'test_05_2DView.py'])
+    pytest.main(['-v', 'test_05_2DView.py'])

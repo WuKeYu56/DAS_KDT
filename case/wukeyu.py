@@ -10,7 +10,7 @@ login(d)
 das = Base(d)
 
 das.open("http://11.0.0.167:9103/v2/visual/mercator.html?siteId=100024")
-das.click(("xpath", "//div[@class=\"layui-unselect layui-form-select\"]"))
+# das.click(("xpath", "//div[@class=\"layui-unselect layui-form-select\"]"))
 # das.click(("xpath", '//dd[@lay-value="6"]'))
 # das.click(('xpath', '//span[@class="open"]'))
 # das.click(('xpath', '//tr[@data-index="0"]'))
