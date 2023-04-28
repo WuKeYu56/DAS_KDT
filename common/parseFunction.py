@@ -1,6 +1,5 @@
 import time
 
-
 def do_step(das, steps):
     results = []
     for step in steps:
@@ -27,5 +26,5 @@ def do_step(das, steps):
             result = True
         else:
             result = False
-        time.sleep(1)
+        time.sleep(1.5)
     return results, result

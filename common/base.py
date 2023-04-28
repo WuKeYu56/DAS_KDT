@@ -330,6 +330,7 @@ class Base:
                 print('已点击中心点')
 
             elif type == "stake":
+                time.sleep(2)
                 ui.click(x1, y1, button='left')  #点击中心点开始绘制
                 for i in range(num):
                     x2 = x1+random.randint(0, 200)  #可改变数字调节点击位置
