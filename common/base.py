@@ -1,3 +1,4 @@
+import os
 import random
 import time
 
@@ -341,6 +342,48 @@ class Base:
             else:
                 print('请输入正确的参数：type=polyline/polygon')
             return True
+
+    def show_maleage(self, location):
+        try:
+            ui.FAILSAFE = True
+            m, n = ui.size()
+            if location == "center":
+                x1, y1 = m/2, n/2
+                ui.moveTo(x1, y1)
+                ui.scroll(200)
+                ui.click(x1+random.randint(-200, 200), y1+random.randint(-200, 200), button="left")
+                return True
+            else:
+                pass
+        except:
+            print("未能成功点击，请检查用例")
+            return False
+
+
+    def sleep(self, n):
+        try:
+            n = float(n)
+            time.sleep(n)
+            return True
+        except:
+            print("请输入合理的睡眠时长，只能为int或float")
+
+    def saveScreenshot(self, name):
+        ui.FAILSAFE = True
+        try:
+            d = time.strftime("%Y-%m-%d", time.localtime())
+            t = time.strftime("%H-%M-%S", time.localtime())
+            bathPath = 'C:/Users/wkyan/Desktop/ScreenShot/'+d+'/'
+            if not os.path.exists(bathPath):
+                os.mkdir(bathPath)
+            fullPath = bathPath+t+f'-{name}.png'
+            print(f"{name}保存的路径：")
+            ui.screenshot(fullPath)
+            return True
+        except:
+            print("截图失败，请检查")
+            return False
+
 
 
 

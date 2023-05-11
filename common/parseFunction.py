@@ -26,5 +26,5 @@ def do_step(das, steps):
             result = True
         else:
             result = False
-        time.sleep(1.5)
+        time.sleep(1)
     return results, result

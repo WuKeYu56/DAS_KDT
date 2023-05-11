@@ -1,15 +1,15 @@
+import os
 import time
 
-from selenium import webdriver
+import pyautogui as ui
 
-from common.base import Base
-from pages.loginpage import login
 
-d = webdriver.Chrome()
-login(d)
-das = Base(d)
+# d = webdriver.Chrome()
+# login(d)
+# das = Base(d)
+#
+# das.open("http://11.0.0.167:9103/v2/visual/mercator.html?siteId=100024")
 
-das.open("http://11.0.0.167:9103/v2/visual/mercator.html?siteId=100024")
 # das.click(("xpath", "//div[@class=\"layui-unselect layui-form-select\"]"))
 # das.click(("xpath", '//dd[@lay-value="6"]'))
 # das.click(('xpath', '//span[@class="open"]'))
@@ -40,5 +40,19 @@ das.open("http://11.0.0.167:9103/v2/visual/mercator.html?siteId=100024")
 # time.sleep(2)
 # das.click(('xpath', '/html/body/div[4]/div[3]/a[1]'))
 
-time.sleep(5)
-d.close()
+# time.sleep(5)
+# d.close()
+
+def abc(name):
+    ui.FAILSAFE = True
+    d = time.strftime("%Y-%m-%d", time.localtime())
+    t = time.strftime("%H-%M-%S", time.localtime())
+    bathPath = 'C:/Users/wkyan/Desktop/ScreenShot/'+d+'/'
+    if not os.path.exists(bathPath):
+        os.mkdir(bathPath)
+    fullPath = bathPath+t+f'-{name}.png'
+    print(fullPath)
+    ui.screenshot(fullPath)
+
+if __name__ == '__main__':
+    abc('test')
