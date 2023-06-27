@@ -8,6 +8,7 @@ from common.base import Base
 def login(driver, user='gm_admin', psw='qwe123123'):
     # host = 'home.gm-robot.com'
     host = '11.0.0.167'
+    # host = '11.0.1.112'
     url = f'http://{host}:9103/login'
     print(url)
     #-------定位元素信息--------#

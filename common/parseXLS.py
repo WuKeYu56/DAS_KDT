@@ -15,7 +15,7 @@ class Parse():
         except Exception as e:
             print(e)
 
-    def get_sheet(self, sheet_name="sheet1"):
+    def get_sheet(self, sheet_name="Sheet3"):
         try:
             self.init_book()
             self.sheet = self.book.sheet_by_name(sheet_name)

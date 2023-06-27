@@ -11,6 +11,7 @@ def get_data(datafile, module_name='login'):
 def data(datafile):
     p = Parse(datafile)
     p.get_sheet("Sheet1")
+    # p.get_sheet()
     tcs = p.prepare_tc()
     return tcs
 

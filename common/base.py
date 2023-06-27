@@ -298,6 +298,7 @@ class Base:
             #基于屏幕分辨率获取中心点
             m, n = ui.size()
             x1, y1 = m/2, n/2
+            time.sleep(1)
             ui.click(x1, y1, button='left')
             ui.scroll(400)
 
@@ -384,8 +385,9 @@ class Base:
             print("截图失败，请检查")
             return False
 
-
-
+    def refresh(self, test):
+        self.driver.refresh()
+        return True
 
 if __name__ == '__main__':
     driver = webdriver.Chrome
