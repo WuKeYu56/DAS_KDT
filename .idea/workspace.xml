@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="26899d7d-c31a-4d21-9de3-cc0fcec83d0e" name="变更" comment="添加锁定工程测试用例及相关函数">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="26899d7d-c31a-4d21-9de3-cc0fcec83d0e" name="变更" comment="更新锁定状态用例">
       <change beforePath="$PROJECT_DIR$/case/wukeyu.py" beforeDir="false" afterPath="$PROJECT_DIR$/case/wukeyu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testdata/case2.xls" beforeDir="false" afterPath="$PROJECT_DIR$/testdata/case2.xls" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,7 +198,7 @@
       <workItem from="1686296871519" duration="2444000" />
       <workItem from="1687073019378" duration="1336000" />
       <workItem from="1687310480018" duration="2144000" />
-      <workItem from="1687831035500" duration="9701000" />
+      <workItem from="1687831035500" duration="10086000" />
     </task>
     <task id="LOCAL-00001" summary="本地支持运行，无allure生成报告">
       <created>1676960992999</created>
@@ -335,7 +333,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687844061098</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="更新锁定状态用例">
+      <created>1688009344152</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1688009344152</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -368,7 +373,8 @@
     <MESSAGE value="更新测试用例" />
     <MESSAGE value="新增截图功能，添加用例步骤" />
     <MESSAGE value="添加锁定工程测试用例及相关函数" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加锁定工程测试用例及相关函数" />
+    <MESSAGE value="更新锁定状态用例" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新锁定状态用例" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
